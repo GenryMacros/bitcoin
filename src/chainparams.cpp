@@ -432,10 +432,10 @@ public:
         UpdateActivationParametersFromArgs(args);
 
         genesis = CreateGenesisBlock(1296688602, 5, 0x207fffff, 1, 100 * COIN);
-	consensus.hashGenesisBlock = genesis.GetHash();
+	    consensus.hashGenesisBlock = genesis.GetHash();
         
         assert(consensus.hashGenesisBlock == uint256S("0x0ad420e7b746eaa674a50905839513d6aefcf1bb79edafdb0f8e0df75e940af3"));
-	assert(genesis.hashMerkleRoot == uint256S("0xbce15d4f0f9d2d7ba03064da56007ea0a437d7da74eaadc2260b0d435fcec312"));
+	    assert(genesis.hashMerkleRoot == uint256S("0xbce15d4f0f9d2d7ba03064da56007ea0a437d7da74eaadc2260b0d435fcec312"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();
